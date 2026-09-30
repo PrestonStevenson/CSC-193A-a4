@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>My first HTML page</title>
+  </head>
+  <body>
+    <p>This is my CSC-193A page. <br/> 
+        This assignment covers the basic elements about HTML syntax to make a website.<br/> 
+        For example, I can make words <strong>bold</strong> by using the "strong" keyword. <br/>
+        Here's an image of an animal using the src keyword. Photo taken by Sefa Demirtaş from 
+        <a href="https://www.pexels.com/photo/adorable-black-and-white-cat-sitting-indoors-32557420/">Pixels Website</a> <br/>
+        Here's the <a href="https://www.pexels.com/license/">License</a> as proof that I can use this image for my website.
+    </p>
+    <button onClick="changePic()">Click to Change Picture</button>
+    <br>
+    <img id="pic" src="duck.jpg">
+    <script>
+      let picture = false
+      const picture1URL = "cat.jpg";
+      const picture2URL = "duck.jpg";
+
+      function changePic(){
+        picture = !picture;
+        const img = document.getElementById("pic");
+        img.src = picture ? picture1URL : picture2URL;
+      }
+    </script>
+  </body>
+</html>
