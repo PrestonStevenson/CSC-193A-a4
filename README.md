@@ -1,1 +1,1 @@
-Practicing to see if website gets published
+Practicing HTML and CSS and publishing it to Git.
